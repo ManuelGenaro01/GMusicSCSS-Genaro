@@ -1,0 +1,38 @@
+.naveg{
+    position:sticky;
+    top:0px;
+    grid-area: nav;
+    animation-name: efecto_nav;
+    animation-duration: 1s;
+ }
+ .naveg__bot{
+     display:flex;
+     list-style-type: none;
+     overflow:hidden;
+     background-color: black;
+     text-align: center;
+     flex-wrap: wrap;
+     justify-content: space-between;
+         li{
+             a{
+                 text-align: center;
+                 text-decoration: none;
+                 color:white;
+                 font-family: $font3;
+                 font-size:1.3rem;
+                 transition: font-size 0.5s;
+                     &:hover{
+                         font-size: 2rem;
+                     }
+             }
+         }
+ }
+ .naveg__bot--border{
+     width: 20%;
+     padding-bottom:1rem;
+     padding-top:1rem;
+     margin:0;
+     border-right: solid 0.06rem;
+     border-left:solid 0.06rem;
+     background-color: #252525;
+ }

@@ -1,0 +1,28 @@
+body{
+    background-color: #6d6d6d
+}
+.body{
+    display:grid;
+    grid-template-areas:$grid;
+}
+
+.secciones{
+    display: flex;
+    text-align: center;
+    padding:2rem;
+    grid-area:cont;
+    flex-direction: column;
+    animation-name: secciones;
+    animation-duration: 1s;
+}
+.secciones__separar{
+    border-top: solid 0.10rem;
+}
+.video1{
+    padding:1rem;
+}
+
+footer{
+    grid-area:footer;
+    text-align: center;
+}

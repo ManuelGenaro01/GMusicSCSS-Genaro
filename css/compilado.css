@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.header__logo {
+  text-align: center;
+  grid-area: logo;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  animation-name: efectoLogo;
+  animation-duration: 1s; }
+
+.redes {
+  text-align: center;
+  padding-right: 2rem;
+  animation-name: efectoRedes;
+  animation-duration: 1s; }
+
+.redes__estilo {
+  list-style-type: none; }
+
+.redes__estilo--line {
+  display: inline-block; }
+
+.logo {
+  font-family: "Roboto", sans-serif;
+  font-size: 5rem; }
+
+.sub {
+  font-family: "Dongle", sans-serif;
+  font-size: 2rem; }
+
+.sub2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  padding-bottom: 1rem; }
+
+.sub3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  padding-top: 0.3rem;
+  text-align: center; }
+
+.naveg {
+  position: sticky;
+  top: 0px;
+  grid-area: nav;
+  animation-name: efecto_nav;
+  animation-duration: 1s; }
+
+.naveg__bot {
+  display: flex;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: black;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .naveg__bot li a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.3rem;
+    transition: font-size 0.5s; }
+    .naveg__bot li a:hover {
+      font-size: 2rem; }
+
+.naveg__bot--border {
+  width: 20%;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  margin: 0;
+  border-right: solid 0.06rem;
+  border-left: solid 0.06rem;
+  background-color: #252525; }
+
+body {
+  background-color: #6d6d6d; }
+
+.body {
+  display: grid;
+  grid-template-areas: "logo" "nav" "cont" "footer"; }
+
+.secciones {
+  display: flex;
+  text-align: center;
+  padding: 2rem;
+  grid-area: cont;
+  flex-direction: column;
+  animation-name: secciones;
+  animation-duration: 1s; }
+
+.secciones__separar {
+  border-top: solid 0.10rem; }
+
+.video1 {
+  padding: 1rem; }
+
+footer {
+  grid-area: footer;
+  text-align: center; }
+
+@keyframes efectoLogo {
+  0% {
+    transform: translate(-100vw, 0); }
+  100% {
+    transform: translate(0, 0); } }
+
+@keyframes efectoRedes {
+  0% {
+    transform: translate(100vw, 0); }
+  100% {
+    transform: translate(0, 0); } }
+
+@keyframes efecto_nav {
+  0% {
+    opacity: 0%; }
+  100% {
+    opacity: 100%; } }
+
+@keyframes secciones {
+  0% {
+    transform: scale(0.5); }
+  100% {
+    transform: scale(1); } }

@@ -1,0 +1,32 @@
+@keyframes efectoLogo{
+    0%{
+        transform:translate(-100vw,0);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+@keyframes efectoRedes{
+    0%{
+        transform: translate(100vw,0);
+    }
+    100%{
+        transform:translate(0,0)
+    }
+}
+@keyframes efecto_nav{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+@keyframes secciones{
+    0%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
